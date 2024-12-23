@@ -1,0 +1,73 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color:antiquewhite;
+}
+h1{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 2.5rem;
+  color: blueviolet;
+}
+
+.container{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  padding-top: 80px;
+  
+  
+}
+.container .employee1, .employee2, .employee3, .employee4{
+  height: auto;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: aqua;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.container .image1{
+  height: 100px;
+  width: 100px;
+  border: 3px solid violet;
+  border-radius: 50%;
+  padding: 3px;
+  margin: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.container p{
+  background-color: aqua;
+  padding: 5px;
+  color: rgb(78, 82, 88);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+
+
+/* Media Query */
+@media screen and (max-width:1200px) {
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
